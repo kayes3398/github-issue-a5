@@ -10,19 +10,48 @@
 </head>
 
 <body>
-  <header class="header-section">
+
     <div class="logo">
       <img src="./assets/github-logo.png" alt="Logo" class="logo-image" />
       <h2 class="logo-heading">gitHub issues tracker</h2>
     </div>
-    <div class="search-container">
+    <div class="search-cont">
       <div class="input-field">
         <img src="./assets/search.svg" alt="search icon" class="search-icon" />
         <input type="text" id="search-input" class="search-input" placeholder="Search issues..." />
       </div>
       <button class="btn btn-active" id="search-btn">Search</button>
     </div>
+
   </header>
+<header class="header-container">
+  <div class="logo">
+    <img src="./assets/github-logo.png" alt="Logo" class="logo-image" />
+    <h2 class="logo-heading">gitHub issues tracker</h2>
+  </div>
+
+  <div class="search-cont">
+    <div class="input-field">
+      <img src="./assets/search.svg" alt="search icon" class="search-icon" />
+      <input type="text" id="search-input" class="search-input" placeholder="Search issues..." />
+    </div>
+    <button class="btn btn-active" id="search-btn">Search</button>
+
+    <button class="btn btn-new-issue" id="new-issue-btn">
+      <span class="plus-icon">+</span> New Issue
+    </button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
   <section class="tab-section">
     <button class="tab-item btn" onclick="fetchAllIssue()" id="all">
       All
@@ -34,7 +63,7 @@
       Closed
     </button>
   </section>
-  <section class="counter-section">
+  <section class="count-section">
     <div class="left-side">
       <div class="counter-image">
         <img src="./assets/Aperture.png" />

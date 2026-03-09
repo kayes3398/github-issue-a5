@@ -194,7 +194,7 @@ const getLabels = labels => {
     .map(
       e =>
         `<div class="label ${e === 'bug' ? 'label-bug' : e === 'enhancement' ? 'label-enhance' : 'label-help'}">
-      <img src="./assets/${e === 'bug' ? 'BugDroid' : e === 'enhancement' ? 'Sparkle' : 'Lifebuoy'}.png" />
+      <img src="./assets/${e === 'bug' ? 'Bug' : e === 'enhancement' ? 'Sparkle' : 'Spiner'}.png" />
         ${e}
       </div>`,
     )

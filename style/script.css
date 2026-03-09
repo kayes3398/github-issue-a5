@@ -15,7 +15,7 @@ body {
   background: #f8fafc;
 }
 
-.header-section {
+.header-container {
   background: #fff;
   width: 100%;
   margin: 0 auto;
@@ -44,7 +44,7 @@ body {
   text-transform: capitalize;
 }
 
-.search-container {
+.search-cont {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -74,6 +74,42 @@ body {
 
 .search-input:focus {
   border-color: #4a00ff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.search-cont {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+
+.btn-new-issue {
+  background-color: #4c1d95; 
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-new-issue:hover {
+  background-color: #5b21b6;
+}
+
+.plus-icon {
+  font-size: 1.2rem;
 }
 
 .search-icon {
@@ -125,7 +161,7 @@ body {
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
 }
 
-.counter-section {
+.count-section {
   width: 80%;
   margin: 16px auto 0 auto;
   padding: 24px;
