@@ -1,33 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style/script.css">
-  <!-- fontawesome cdn -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Github Issue Tracker</title>
+  <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./style/script.css" />
 </head>
+
 <body>
   <header class="header-section">
     <div class="logo">
-      
       <img src="./assets/github-logo.png" alt="Logo" class="logo-image" />
       <h2 class="logo-heading">gitHub issues tracker</h2>
     </div>
     <div class="search-container">
-
       <div class="input-field">
-        <img src="./assets/search.svg" alt="search icon" class="search-icon" />
+        <img src="./assets/search.png" alt="search icon" class="search-icon" />
         <input type="text" id="search-input" class="search-input" placeholder="Search issues..." />
       </div>
       <button class="btn btn-active" id="search-btn">Search</button>
     </div>
   </header>
-  
   <section class="tab-section">
     <button class="tab-item btn" onclick="fetchAllIssue()" id="all">
       All
@@ -39,6 +34,36 @@
       Closed
     </button>
   </section>
-  
+  <section class="counter-section">
+    <div class="left-side">
+      <div class="counter-image">
+        <img src="./assets/Aperture.png" />
+      </div>
+      <div class="counter-details">
+        <h2 class="counter-inner">
+          <span id="counter">20</span>
+          Issues
+        </h2>
+        <p class="h-paragraph">Track and manage your project issues</p>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="indicator-container">
+        <div class="indicator indicator-open"></div>
+        <p class="indicator-name">Open</p>
+      </div>
+      <div class="indicator-container">
+        <div class="indicator indicator-closed"></div>
+        <p class="indicator-name">Closed</p>
+      </div>
+    </div>
+  </section>
+  <section class="main-section">
+    <span class="loader hide" id="data-loader"></span>
+    <div class="cards-container"></div>
+  </section>
+  <div class="modal-container hide"></div>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
