@@ -4,11 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style/script.css">
+  <!-- fontawesome cdn -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <header class="header-section">
+    <div class="logo">
+      
+      <img src="./assets/github-logo.png" alt="Logo" class="logo-image" />
+      <h2 class="logo-heading">gitHub issues tracker</h2>
+    </div>
+    <div class="search-container">
 
-
-  <p>login success</p>
+      <div class="input-field">
+        <img src="./assets/search.svg" alt="search icon" class="search-icon" />
+        <input type="text" id="search-input" class="search-input" placeholder="Search issues..." />
+      </div>
+      <button class="btn btn-active" id="search-btn">Search</button>
+    </div>
+  </header>
+  
+  <section class="tab-section">
+    <button class="tab-item btn" onclick="fetchAllIssue()" id="all">
+      All
+    </button>
+    <button class="tab-item btn" onclick="fetchOpenIssue()" id="open">
+      Open
+    </button>
+    <button class="tab-item btn" onclick="fetchClosedIssue()" id="closed">
+      Closed
+    </button>
+  </section>
   
 </body>
 </html>
