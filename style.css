@@ -1,0 +1,21 @@
+@import "tailwindcss"
+
+.demo-credentials {
+  width: 100%;
+  /* background-color: */
+  padding: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+.bold {
+  color: #000;
+  font-weight: 600;
+}
+.heading{
+  font-size: 32px;
+  text-align: center;
+}
+.login-para{
+  font-size: 20px;
+  text-align: center;
+}

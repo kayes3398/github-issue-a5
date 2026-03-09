@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind/daisy -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="login-logo min-h-screen max-w-md bg-base-200 mx-auto rounded-2xl">
+  <div class="login-logo w-[200px] mx-auto pt-15 pl-11">
+    <img src="./assets/github-logo.png" alt="">
+  </div>
+
+  <div class="p-12 justify-center pt-2">
+    <h1 class="heading bold text[14px]">GitHub Issues Tracker</h1>
+    <p class="login-para ">Sign in to manage your issues</p>
+  </div>
+
+  <div class="login-form ">
+    <div class="card  w-full max-w-sm shrink-0 mx-auto">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label font-[456] bold ">Username</label>
+          <input type="email" class="input rounded-[10px]"  placeholder="Enter Username" />
+          <label class="label bold">Password</label>
+          <input type="password" class="input rounded-[10px]" placeholder="Enter Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-neutral mt-4 bg-blue-700">Sign In</button>
+        </fieldset>
+      </div>
+      <div class="login-footer">
+        <p class="login-paragraph" style="text-align: center">
+          Demo Credentials
+        </p>
+
+        <div class="relative flex py-5 items-center">
+          <div class="flex-grow border-t border-gray-300"></div>
+          <span class="flex-shrink mx-4 text-gray-500 font-normal">OR</span>
+          <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+        <div class="demo-credentials  pl-25 pt-5">
+          <span class="bold ">Username</span>: admin <br>
+          <span class="bold ">Password</span>: admin123
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="./login.js"></script>
+
+
+</body>
+
+</html>
